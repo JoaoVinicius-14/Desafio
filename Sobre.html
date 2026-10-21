@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim - Programa Trilhas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        main {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 45px 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 580px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        main > img {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 14px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 1.15rem;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        p.subtitle {
+            font-size: 0.88rem;
+            color: #666666;
+            margin-bottom: 25px;
+        }
+        p.about-text {
+            font-size: 0.92rem;
+            color: #444444;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 480px;
+        }
+        .back-link {
+            margin-bottom: 15px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            color: #6a0dad;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            width: 100%;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #6a0dad;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <img src="foto_perfil.jpg" alt="Foto de perfil">
+        <h1>João Vinícius</h1>
+        <p class="subtitle">Estudante de Desenvolvimento Front-end pelo Programa Trilhas</p>
+        <p class="about-text">
+            <br>Sou um estudante universitário da UFMA.<br/>
+            Aprendiz de desenvolvimento front-end em busca de experiências profissionais,
+            apaixonado por filme e jogos.
+        </p>
+        <a href="desafio1.html" class="back-link">&larr; Voltar para o Perfil</a>
+        <footer>
+            <a href="https://github.com/JoaoVinicius-14" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3ovin%C3%ADcius1404/?isSelfProfile=true" target="_blank">LinkedIn</a>
+        </footer>
+    </main>
+
+</body>
+</html>

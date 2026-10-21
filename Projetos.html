@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Programa Trilhas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        main {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        main > img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 1.1rem;
+            color: #2c2c2c;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        p.subtitle {
+            font-size: 0.85rem;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .project-card {
+            background-color: #f0e6f2;
+            border: 1px solid #e2d2e5;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+        .project-img {
+            width: 100%;
+            height: 120px;
+            background-color: #e2e2e2;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            background-image: linear-gradient(45deg, #ccc 25%, transparent 25%), 
+                              linear-gradient(-45deg, #ccc 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #ccc 75%), 
+                              linear-gradient(-45deg, transparent 75%, #ccc 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+        .project-link {
+            text-decoration: none;
+            color: #333333;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.2s;
+        }
+
+        .project-link:hover {
+            color: #6a0dad;
+        }
+        .back-link {
+            margin-bottom: 15px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            color: #6a0dad;
+            font-weight: 500;
+        }
+        footer {
+            width: 100%;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <img src="foto_perfil.jpg" alt="Foto de perfil">
+
+        <h1>João Vinícius</h1>
+        <p class="subtitle">Desenvolvedor Front-end no Programa Trilhas</p>
+        <section class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"></div>
+                <a href="#" class="project-link">Acessar projeto &rarr;</a>]
+            </div>
+            <div class="project-card">
+                <div class="project-img"></div>
+                <a href="#" class="project-link">Acessar projeto &rarr;</a>
+            </div>
+
+           
+        </section>
+        <a href="desafio1.html" class="back-link">&larr;</a>
+        <footer>
+            <a href="https://github.com/JoaoVinicius-14" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3ovin%C3%ADcius1404/?isSelfProfile=true" target="_blank">LinkedIn</a>
+        </footer>
+    </main>
+
+</body>
+</html>
